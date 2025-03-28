@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escaping the Maze (Download Portal)</title>
+
+    <script>
+        // Redirect to mobile version if the user is on a mobile device
+        document.addEventListener('DOMContentLoaded', () => {
+            const isMobile = /iPhone|iPad|iPod|Android|BlackBerry|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+            if (isMobile) {
+                // Redirect to the mobile version of the site
+                window.location.href = "https://github.com/escapingthemaze/portal/blob/main/mobile_portal.html";
+            }
+        });
+    </script>
+
     <style>
         body {
             font-family: Verdana, sans-serif;
